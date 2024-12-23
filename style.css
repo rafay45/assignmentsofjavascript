@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
+
+h1 {
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 5em;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.container {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    font-style: italic;
+    font-family: "Aref Ruqaa Ink", serif;
+    color: wheat;
+    width: 20vw;
+    height: 50vh;
+    border-radius: 10px;
+    border: 2px solid black;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 12px 12px 13px rgba(0, 0, 0, 0.3);
+}
+.card>h2{
+    font-size: 2em;
+}
+.card>h3{
+    font-size: 1.8em;
+}
+.card>.question{
+    text-align: center;
+    font-size: 17px;
+}
+.card>a>button{
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.card:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, #3a47d5 0%, #00d2ff 100%);
+}
+.card>a>button:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, #00ff88  0%, #0700b8 100%);
+    transition: all 0.3s ease-in;
+}
+@media (min-width: 344px) and (max-width: 667px) {
+    h1{
+        font-size: 25px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        margin-top: 50px;
+        width: 250px;
+        height: 300px;
+    }
+    .card>h2{
+        font-size: 25px;
+    }
+    .card>h3{
+        font-size: 25px;
+    }
+   
+}
+@media (min-width: 667px) and (max-width: 1023px){
+    h1{
+        font-size: 50px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        margin-top: 50px;
+        width: 450px;
+        height: 500px;
+    }
+    .card>h2{
+        font-size: 50px;
+    }
+    .card>h3{
+        font-size: 48px;
+    }
+    .card>a>button{
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .question>p{
+        font-size: 28px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1110px){
+
+    .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    h1{
+        font-size: 70px;
+    }
+    .card>h2{
+        font-size: 20px;
+    }
+    .card>h3{
+        font-size: 20px;
+    }
+    .card{
+        border-radius: 10px;
+        margin-top: 50px;
+        width: 200px;
+        height: 250px;
+    }
+    .question>p{
+        font-size: 12px;
+    }
+    .card>a>button{
+        width: 170px;
+        height: 30px;
+        font-size: 10px;
+    }
+}
+@media (min-width: 1110px) and (max-width: 1200px){
+    h1{
+        font-size: 70px;
+    }
+    .card>h2{
+        font-size: 20px;
+    }
+    .card>h3{
+        font-size: 20px;
+    }
+    .card{
+        border-radius: 10px;
+        margin-top: 50px;
+        width: 200px;
+        height: 250px;
+    }
+    .question>p{
+        font-size: 12px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1326px){
+    h1{
+        font-size: 70px;
+    }
+    .card>h2{
+        font-size: 28px;
+    }
+    .card>h3{
+        font-size: 27px;
+    }
+    .card{
+        border-radius: 10px;
+        margin-top: 50px;
+        width: 250px;
+        height: 280px;
+    }
+    .question>p{
+        font-size: 15px;
+    }
+}

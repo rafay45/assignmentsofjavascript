@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else & else if statement</title>
+</head>
+
+<body>
+    <script>
+        let userInput = prompt('Enter a single character (number or letter)')
+
+        let charCode = userInput.charCodeAt(0)
+
+        if (userInput.length === 1) {
+            if (charCode >= 48 && charCode <= 57) {
+                alert('This is a number')
+            } else if (charCode >= 65 && charCode <= 90) {
+                alert('This is a Uppercase')
+            } else if (charCode >= 97 && charCode <= 122) {
+                alert('This is a lowercase')
+            }
+            else {
+                alert('The input is not a number or letter.')
+            }
+        } else {
+            alert('Please enter only a single character')
+        }
+
+
+        let num1 = prompt('Enter the first integer')
+
+        let num2 = prompt('Enter the second integer')
+
+        if (num1 > num2) {
+            alert("The larger number is: " + num1)
+        }
+        else if (num2 > num1) {
+            alert("The larger number is: " + num2)
+        }
+        else {
+            alert('both number are equal')
+        }
+
+        let number = prompt('Check your value')
+
+        if (number >= 1) {
+            alert("The number is positive")
+        } else if (number <= 1) {
+            alert("The number is negative")
+        } else {
+            alert("The number is zero")
+        }
+
+
+
+        let userCharacter = prompt("Enter a Vowel character")
+
+        if (userCharacter.length === 1) {
+
+            if (userCharacter === 'a' || userCharacter === 'e' || userCharacter === 'i' || userCharacter === 'o' || userCharacter === 'u') {
+                alert('True')
+            } else {
+                alert('false')
+            }
+        } else {
+            alert('Please enter only one character')
+        }
+
+
+        alert('Please enter your password')
+
+        let userPassword = prompt('Enter your password')
+
+        let password = '123456';
+
+        if (userPassword === password) {
+            alert('Correct! The password you entered matches the original password')
+        } else {
+            alert('incorrect')
+        }
+
+
+        var greeting;
+        var hour = 13;
+
+        if (hour <= 18) {
+            greeting = "Good day";
+        } else {
+            greeting = "Good evening";
+        }
+        alert(greeting)
+
+
+        let firstPassword = prompt('Please add your Password')
+        alert('Password added')
+
+        let loginPassword = prompt('login web (Enter a  Password)')
+
+        if (loginPassword === firstPassword) {
+            document.write('<h1>Welcome to our website</h1>')
+        } else {
+            alert('incorrect!')
+        }
+
+        let time = prompt("Enter the time in 24-hour clock format");
+
+        if (time >= 0 && time <= 1200) {
+            alert("Good morning!");
+        } else if (time >= 1200 && time <= 1700) {
+            alert("Good afternoon!");
+        } else if (time >= 1700 && time <= 2100) {
+            alert("Good evening!");
+        } else if (time >= 2100 && time <= 2359) {
+            alert("Good night!");
+        } else {
+            alert("Invalid time format. Please enter a value between 0000 and 2359.")
+        }
+    </script>
+</body>
+
+</html>

@@ -5,11 +5,11 @@
 }
 
 body {
-    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    background: wheat ;
 }
 
 h1 {
-    color: white;
+    color: black;
     text-decoration: underline;
     text-align: center;
     font-size: 5em;
@@ -26,10 +26,10 @@ h1 {
 }
 
 .card{
-    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    background: #DEB887;
     font-style: italic;
     font-family: "Aref Ruqaa Ink", serif;
-    color: wheat;
+    color: black;
     width: 20vw;
     height: 50vh;
     border-radius: 10px;
@@ -51,8 +51,11 @@ h1 {
     text-align: center;
     font-size: 17px;
 }
+.card>.question>p{
+    font-weight: bold;
+}
 .card>a>button{
-    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+    background: black;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -62,12 +65,13 @@ h1 {
 }
 .card:hover{
     cursor: pointer;
-    background: linear-gradient(90deg, #3a47d5 0%, #00d2ff 100%);
+    background: #bb9666;
+    transition: all 0.3s ease;
 }
 .card>a>button:hover{
     cursor: pointer;
-    background: linear-gradient(90deg, #00ff88  0%, #0700b8 100%);
-    transition: all 0.3s ease-in;
+    background: rgb(20, 20, 20);
+    transition: all 0.2s ease-in;
 }
 @media (min-width: 344px) and (max-width: 667px) {
     h1{

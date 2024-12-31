@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let userOrder = prompt("Hey... Place Your Order. Here are the dishes from our restaurant. \n Please tell me what you would like to eat. \n \n Biryani  (Chicken: 700 & Beef: 1000) \n Karahi  (Chicken: 900 & Beef: 1200) \n Nihari  (Chicken: 450 & Beef: 650 ) \n Pulao  (Chicken: 300 & Beef: 420) \n Qorma  (Chicken: 500 & Beef: 600) \n Tandoori Chicken  (1250) \n Butter Chicken  (1400) \n Seekh kabab  (1050) \n Haleem  (200) \n Malai Boti  (1000) \n Chapli Kabab  (850) \n Daal Tarka  (250)")
+
+        let chicken = 700;
+        let beef = 1000;
+
+        let karahiChicken = 900;
+        let karahiBeef = 1200;
+
+        let qormaChicken = 500;
+        let qormaBeef = 600;
+
+        let nihariChicken = 450;
+        let nihariBeef = 650;
+
+        let pulaoChicken = 300;
+        let pulaoBeef = 420;
+
+        let tandooriChicken = 1250;
+
+        let butterChicken = 1400;
+
+        let seekhKabab = 1050;
+
+        let chapliKabab = 850;
+
+        let malaiBoti = 1000;
+
+        let daalTarka = 250;
+
+        let haleem = 200;
+
+        if (userOrder === 'Biryani' || userOrder === 'Karahi' || userOrder === 'Qorma' || userOrder === 'Nihari' || userOrder === 'Pulao' || userOrder === 'Tandoori Chicken' || userOrder === 'Butter Chicken' || userOrder === 'Seekh Kabab' || userOrder === 'Haleem' || userOrder === 'Malai Boti' || userOrder === 'Chapli Kabab' || userOrder === 'Daal Tarka') {
+            if (userOrder === 'Biryani') {
+                userChoise = prompt('Chicken Biryani or Beef Biryani')
+                if (userChoise === 'Chicken') {
+                    dishKilogram = prompt('How many kilograms?')
+                    if (dishKilogram <= 5) {
+                        userAmount = prompt('Enter your amount')
+                        if (userAmount >= chicken) {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - chicken} \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                        } else {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                        }
+
+                    } else {
+                        alert('Only 5kg available')
+                    }
+                } else if (userChoise === 'Beef') {
+                    dishKilogram = prompt('How many kilograms?')
+                    if (dishKilogram <= 5) {
+                        userAmount = prompt('Enter your amount')
+                        if (userAmount >= beef) {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - chicken} \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                        } else {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                        }
+                    } else {
+                        alert('Only 5kg available')
+                    }
+                } else {
+                    alert('Other than these two, there arent any more')
+                }
+            } else if (userOrder === 'Karahi') {
+                userChoise = prompt('Chicken Karahi or Beef Karahi')
+                if (userChoise === 'Chicken') {
+                    dishKilogram = prompt('How many kilograms?')
+                    if (dishKilogram <= 5) {
+                        userAmount = prompt('Enter your amount')
+                        if (userAmount >= karahiChicken) {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - karahiChicken} \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                        } else {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                        }
+                    } else {
+                        alert('Only 5kg available')
+                    }
+                } else if (userChoise === 'Beef') {
+                    dishKilogram = prompt('How many kilograms?')
+                    if (dishKilogram <= 5) {
+                        userAmount = prompt('Enter your amount')
+                        if (userAmount >= karahiBeef) {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - karahiBeef} \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                        } else {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                        }
+                    } else {
+                        alert('Only 5kg available')
+                    }
+                } else {
+                    alert('Other than these two, there arent any more')
+                }
+            } else if (userOrder === 'Qorma') {
+                userChoise = prompt('Chicken Qorma or Beef Qorma')
+                if (userChoise === 'Chicken') {
+                    dishKilogram = prompt('How many kilograms?')
+                    if (dishKilogram <= 5) {
+                        userAmount = prompt('Enter your amount')
+                        if (userAmount >= qormaChicken) {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - qormaChicken} \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                        } else {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                        }
+                    } else {
+                        alert('Only 5kg available')
+                    }
+                } else if (userChoise === 'Beef') {
+                    dishKilogram = prompt('How many kilograms?')
+                    if (dishKilogram <= 5) {
+                        userAmount = prompt('Enter your amount')
+                        if (userAmount >= qormaBeef) {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - qormaBeef} \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                        } else {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                        }
+                    } else {
+                        alert('Only 5kg available')
+                    }
+                } else {
+                    alert('Other than these two, there arent any more')
+                }
+            } else if (userOrder === 'Nihari') {
+                userChoise = prompt('Chicken Nihari or Beef Nihari')
+                if (userChoise === 'Chicken') {
+                    dishKilogram = prompt('How many kilograms?')
+                    if (dishKilogram <= 5) {
+                        userAmount = prompt('Enter your amount')
+                        if (userAmount >= nihariChicken) {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - nihariChicken} \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                        } else {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                        }
+                    } else {
+                        alert('Only 5kg available')
+                    }
+                } else if (userChoise === 'Beef') {
+                    dishKilogram = prompt('How many kilograms?')
+                    if (dishKilogram <= 5) {
+                        userAmount = prompt('Enter your amount')
+                        if (userAmount >= nihariBeef) {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - nihariBeef} \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                        } else {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                        }
+                    } else {
+                        alert('Only 5kg available')
+                    }
+                } else {
+                    alert('Other than these two, there arent any more')
+                }
+            } else if (userOrder === 'Pulao') {
+                userChoise = prompt('Chicken Pulao or Beef Pulao')
+                if (userChoise === 'Chicken') {
+                    dishKilogram = prompt('How many kilograms?')
+                    if (dishKilogram <= 5) {
+                        userAmount = prompt('Enter your amount')
+                        if (userAmount >= pulaoChicken) {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - pulaoChicken} \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                        } else {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                        }
+                    } else {
+                        alert('Only 5kg available')
+                    }
+                } else if (userChoise === 'Beef') {
+                    dishKilogram = prompt('How many kilograms?')
+                    if (dishKilogram <= 5) {
+                        userAmount = prompt('Enter your amount')
+                        if (userAmount >= pulaoBeef) {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - pulaoBeef} \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                        } else {
+                            alert(`Slip \n Your dish: ${userOrder} \n Your Choice: ${userChoise} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                        }
+                    } else {
+                        alert('Only 5kg available')
+                    }
+                } else {
+                    alert('Other than these two, there arent any more')
+                }
+            } else if (userOrder === "Tandoori Chicken") {
+                dishKilogram = prompt('How many kilograms?')
+                if (dishKilogram <= 5) {
+                    userAmount = prompt('Enter your amount')
+                    if (userAmount >= tandooriChicken) {
+                        alert(`Slip \n Your dish: ${userOrder} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - tandooriChicken} \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                    } else {
+                        alert(`Slip \n Your dish: ${userOrder} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                    }
+                } else {
+                    alert('Only 5kg available')
+                }
+            } else if (userOrder === "Butter Chicken") {
+                dishKilogram = prompt('How many kilograms?')
+                if (dishKilogram <= 5) {
+                    userAmount = prompt('Enter your amount')
+                    if (userAmount >= butterChicken) {
+                        alert(`Slip \n Your dish: ${userOrder} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - butterChicken} \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                    } else {
+                        alert(`Slip \n Your dish: ${userOrder} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                    }
+                } else {
+                    alert('Only 5kg available')
+                }
+            } else if (userOrder === "Seekh Kabab") {
+                dishKilogram = prompt('How many kilograms?')
+                if (dishKilogram <= 5) {
+                    userAmount = prompt('Enter your amount')
+                    if (userAmount >= seekhKabab) {
+                        alert(`Slip \n Your dish: ${userOrder} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - seekhKabab} \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                    } else {
+                        alert(`Slip \n Your dish: ${userOrder} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                    }
+                } else {
+                    alert('Only 5kg available')
+                }
+            } else if (userOrder === "Chapli Kabab") {
+                dishKilogram = prompt('How many kilograms?')
+                if (dishKilogram <= 5) {
+                    userAmount = prompt('Enter your amount')
+                    if (userAmount >= chapliKabab) {
+                        alert(`Slip \n Your dish: ${userOrder} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - chapliKabab} \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                    } else {
+                        alert(`Slip \n Your dish: ${userOrder} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                    }
+                } else {
+                    alert('Only 5kg available')
+                }
+            } else if (userOrder === "Malai Boti") {
+                dishKilogram = prompt('How many kilograms?')
+                if (dishKilogram <= 5) {
+                    userAmount = prompt('Enter your amount')
+                    if (userAmount >= malaiBoti) {
+                        alert(`Slip \n Your dish: ${userOrder} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - malaiBoti} \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                    } else {
+                        alert(`Slip \n Your dish: ${userOrder} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                    }
+                } else {
+                    alert('Only 5kg available')
+                }
+            } else if (userOrder === "Daal Tarka") {
+                dishKilogram = prompt('How many kilograms?')
+                if (dishKilogram <= 5) {
+                    userAmount = prompt('Enter your amount')
+                    if (userAmount >= daalTarka) {
+                        alert(`Slip \n Your dish: ${userOrder} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - daalTarka} \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                    } else {
+                        alert(`Slip \n Your dish: ${userOrder} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                    }
+                } else {
+                    alert('Only 5kg available')
+                }
+            } else if (userOrder === "Haleem") {
+                dishKilogram = prompt('How many kilograms?')
+                if (dishKilogram <= 5) {
+                    userAmount = prompt('Enter your amount')
+                    if (userAmount >= haleem) {
+                        alert(`Slip \n Your dish: ${userOrder} \n Kilogram: ${dishKilogram}kg \n Your Amount: ${userAmount - haleem
+                        } \n \n If everything is correct please click "OK" and place your order. \n Thanks!`)
+                    } else {
+                        alert(`Slip \n Your dish: ${userOrder} \n Kilogram: ${dishKilogram}kg \n \n You don't have enough money, so your order cannot be confirmed.`)
+                    }
+                } else {
+                    alert('Only 5kg available')
+                }
+            } else {
+                alert('Please Enter correct spelling')
+            }
+        } else {
+            alert('anhan Please Correct your spelling.')
+        }
+
+    </script>
+</body>
+</html>

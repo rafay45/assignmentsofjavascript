@@ -18,9 +18,9 @@
         let student = ['rafay', 'hamza', 'sahiban']
         console.log(student);
 
-        let studentNames = new Array()
-        studentNames.push('wasay', 'rafay', 'danial', 'ayan')
-        console.log(studentNames);
+        let names = new Array()
+        names.push('wasay', 'rafay', 'danial', 'ayan')
+        console.log(names);
 
 
         let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
@@ -61,20 +61,44 @@
 
 
 
-        let names = ['wasay', 'rafay', 'sahiban'];
+        let studentNames = ['Wasay', 'Rafay', 'Sahiban'];
 
-        let score = [320, 230, 480];
+        let studentScore = [320, 230, 480];
 
         let totalMarks = 500;
 
-        document.write('Score of ',names[0] , ' is ', score[0], ' Percentage')
+       
+
+        for (var i = 0; i < studentNames.length; i++) {
+            let percentage = (studentScore[i] / totalMarks) * 100
+            document.write(`<h1>Score of ${studentNames[i]} is ${studentScore[i]}.Percentage: ${percentage}%</h1>`)
+        }
 
 
+        let fruit = ['apple', 'mango', 'banana', 'orange']
 
+        let price = [100, 200, 300, 400]
 
+        for (var i = 0; i < fruit.length; i++) {
+            document.write(`${i + 1}. ${fruit[i]} - Rs.${price[i]}<br>`)
+        }
 
+        let userCart = [1, 3]
 
+        total = 0
 
+        document.write('<br><br><h3>Your Cart</h3>')
+
+        for (var i = 0; i < userCart.length; i++) {
+            let fruitIndex = userCart[i] -1
+            document.write(`${fruit[fruitIndex]} - Rs. ${price[fruitIndex]}`)
+            total += price[fruitIndex]
+        }
+        document.write(`<br>Total Price .${total}`)
+
+        let scoreOfstudent = [320 , 230 , 480 , 120]
+        document.write(`<h3>Score of student:${scoreOfstudent}</h3>`)
+        document.write(`<h4>ordered score of student:${scoreOfstudent[3]}, ${scoreOfstudent[1]}, ${scoreOfstudent[0]}, ${scoreOfstudent[2]}</h4>`)
     </script>
 </body>
 

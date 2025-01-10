@@ -67,10 +67,11 @@
 
         let totalMarks = 500;
 
-       
+
 
         for (var i = 0; i < studentNames.length; i++) {
             let percentage = (studentScore[i] / totalMarks) * 100
+
             document.write(`<h1>Score of ${studentNames[i]} is ${studentScore[i]}.Percentage: ${percentage}%</h1>`)
         }
 
@@ -90,15 +91,28 @@
         document.write('<br><br><h3>Your Cart</h3>')
 
         for (var i = 0; i < userCart.length; i++) {
-            let fruitIndex = userCart[i] -1
+            let fruitIndex = userCart[i] - 1
             document.write(`${fruit[fruitIndex]} - Rs. ${price[fruitIndex]}`)
             total += price[fruitIndex]
         }
         document.write(`<br>Total Price .${total}`)
 
-        let scoreOfstudent = [320 , 230 , 480 , 120]
+        let scoreOfstudent = [320, 230, 480, 120]
         document.write(`<h3>Score of student:${scoreOfstudent}</h3>`)
         document.write(`<h4>ordered score of student:${scoreOfstudent[3]}, ${scoreOfstudent[1]}, ${scoreOfstudent[0]}, ${scoreOfstudent[2]}</h4>`)
+
+
+        let cities = ['Karachi', 'Lahore', 'Islamabad', 'Quetta', 'Peshawar']
+        let selectedCities = []
+
+        selectedCities = cities.slice(2, 4)
+        document.write('Cities Names: ' + cities)
+        document.write('<br>Selected Cities Names: ' + selectedCities)
+
+        console.log('Cities Names: ' + cities);
+        console.log('Selected Cities Names: ' + selectedCities);
+        
+
     </script>
 </body>
 

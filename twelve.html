@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Twelve</title>
+</head>
+
+<body>
+    <script>
+        let userInp = prompt('Check if a number is a palindrome or not.')
+
+        let result = "";
+
+        for (var i = userInp.length - 1; i >= 0; i--) {b
+            result += userInp[i]
+        }
+        if (result === userInp) {
+            alert('This is a palindrome')
+        } else {
+            alert('This is not palindrome')
+        }
+
+        let fruits = ['Apple', 'Banana', 'Mango', 'Orange', 'Grapes', 'Pineapple', 'Watermelon', 'Pomegranate', 'Guava', 'Papaya']
+
+        let biggestName = fruits[0]
+
+        for (var i = 0; i < fruits.length; i++) {
+            if (fruits[i].length > biggestName.length) {
+                biggestName = fruits[i]
+            }
+        }
+        console.log(`The longest fruits is ${biggestName}`)
+
+
+
+        let fruit = ['Apple', 'Banana', 'Mango', 'Orange', 'Grapes', 'Pineapple', 'Watermelon', 'Pomegranate', 'Guava', 'Papaya']
+
+        let slicedFruits = fruit.slice(1, 4)
+        console.log(slicedFruits);
+
+        let sir = prompt(`Sir, call  \n Rafay \n Wasay \n Sahiban \n Hamza`)
+
+        let students = ['Wasay', 'Hamza', 'Rafay', 'Sahiban']
+
+        let isPresent = false
+
+        for (var i = 0; i < students.length; i++) {
+            if (sir.toLowerCase() === students[i].toLowerCase()) {
+                isPresent = true
+                break
+            }
+        }
+        if (isPresent) {
+            alert('Yes sir am Present')
+        } else {
+            alert('Sir, Please call right student')
+        }
+
+
+
+        var str = "madam";
+        var reversestr = "";
+        for (var i = str.length - 1; i >= 0; i--) {
+            reversestr += str[i];
+        }
+        if (reversestr === str) {
+            console.log
+                ('this is a plaindrome word');
+        }
+        else {
+            console.log
+                (" this is not a plaindrome word");
+        }
+
+
+        let numbers = [12, 384, 76, 100, 455, 678, 3749, 1827]
+        let biggestNumber = numbers[0]
+
+        for (var i = 0; i < numbers.length; i++) {
+            if (numbers[i] > biggestNumber) {
+                biggestNumber = numbers[i]
+
+            }
+        }
+        document.write(`The Biggest Number is  ${biggestNumber}<br>`)
+
+
+        let paragraph = ["is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."]
+        let vowel = ["a", "e", "i", "o", "u"]
+        let vowelWords = "";
+        let character = paragraph[0]
+
+
+        for (var i = 0; i < character.length; i++) {
+            for (var j = 0; j < vowel.length; j++) {
+                if (character[i].toLowerCase() === vowel[j]) {
+                    vowelWords += character[i]
+                    document.write(`<br>vowel Character: ${character[i]} at index ${i}<br>`);
+                }
+            }
+        }
+        document.write(`<br>All Vowel Character length is ${vowelWords.length}`);
+
+
+    </script>
+</body>
+
+</html>

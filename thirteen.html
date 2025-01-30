@@ -1,110 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1 style="text-align: center;">PASSWORDS</h1>
-    <button style="margin-top: 0.8%;" onclick="numberPassword()">JUST NUMBER</button>
-    <!-- <button style="margin-top: 0.8%;" onclick="alphabetsPassword()">JUST ALPHABETS</button>
-    <button style="margin-top: 0.8%;" onclick="numberPassword()">JUST NUMBER</button> -->
-
-    <script>
-        
-// let random = Math.random() * 10000000
-// let floor = Math.floor(random)
-// console.log(floor);
-
-// function numberPassword() {
-//   let numberInp = prompt("How many length of password you want? \n Enter a number \n Only 15 number length is available")
-//   if (numberInp == '2') {
-//     let random = Math.random() * 100 + 1
-//     let floor = Math.floor(random)
-//     document.write(`Your Password is: ${floor}`);
-// } else if (numberInp == '3') {
-//     let random = Math.random() * 1000 + 1
-//     let floor = Math.floor(random)
-//     document.write(`Your Password is: ${floor}`);
-// } else if (numberInp == '4') {
-//     let random = Math.random() * 10000 + 1
-//     let floor = Math.floor(random)
-//     document.write(`Your Password is: ${floor}`);
-// } else if (numberInp == '5') {
-//     let random = Math.random() * 100000 + 1
-//     let floor = Math.floor(random)
-//     document.write(`Your Password is: ${floor}`);
-// } else if (numberInp == '6') {
-//     let random = Math.random() * 1000000 + 1
-//     let floor = Math.floor(random)
-//     document.write(`Your Password is: ${floor}`);
-// } else if (numberInp == '7') {
-//     let random = Math.random() * 10000000 + 1
-//     let floor = Math.floor(random)
-//     document.write(`Your Password is: ${floor}`);
-// } else if (numberInp == '8') {
-//     let random = Math.random() * 100000000 + 1
-//     let floor = Math.floor(random)
-//     document.write(`Your Password is: ${floor}`);
-// } else if (numberInp == '9') {
-//     let random = Math.random() * 1000000000 + 1
-//     let floor = Math.floor(random)
-//     document.write(`Your Password is: ${floor}`);
-// } else if (numberInp == '10') {
-//     let random = Math.random() * 10000000000 + 1
-//     let floor = Math.floor(random)
-//     document.write(`Your Password is: ${floor}`);
-// } else if (numberInp == '11') {
-//     let random = Math.random() * 100000000000 + 1
-//     let floor = Math.floor(random)
-//     document.write(`Your Password is: ${floor}`);
-// } else if (numberInp == '12') {
-//     let random = Math.random() * 1000000000000 + 1
-//     let floor = Math.floor(random)
-//     document.write(`Your Password is: ${floor}`);
-// } else if (numberInp == '13') {
-//     let random = Math.random() * 10000000000000 + 1
-//     let floor = Math.floor(random)
-//     document.write(`Your Password is: ${floor}`);
-// } else if (numberInp == '14') {
-//     let random = Math.random() * 100000000000000 + 1
-//     let floor = Math.floor(random)
-//     document.write(`Your Password is: ${floor}`);
-// } else if (numberInp == '15') {
-//     let random = Math.random() * 1000000000000000 + 1
-//     let floor = Math.floor(random)
-//     document.write(`Your Password is: ${floor}`);
-// } else {
-//     alert("This is password length is not available")
-// }
-// }
-
-
-function numberPassword() {
-    let numberInp = prompt("How many length of password you want? \n Enter a number \n Only 15 number length is available")
-
-  if(numberInp >= 2 && numberInp <= 15){
-    let pow = Math.pow(10, numberInp)
-    let random = Math.random() * pow + 1
-    let floor = Math.ceil(random)
-    document.write(`<b>Your Password is</b>:<i> ${floor}</i>`);
-  }else{
-    alert("This is password length is not available")
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+.allCards{
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  height: 80vh;
+  width: 100%;
 }
+.cards{
+  position: relative;
+    font-style: italic;
+    font-family: "Aref Ruqaa Ink", serif;
+    color: black;
+    width: 20vw;
+    height: 50vh;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 12px 12px 13px rgba(0, 0, 0, 0.3);
+}
+button{
+   background: black;
+   position: absolute;
+     top: 45%;
+     left: 22%;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+p{
+  text-align: center;
+  margin-top: 45%;
+  font-weight: bolder;
+  font-size: 20px;
+}
+h1{
+  text-align: center;
+}
+  </style>
+</head>
 
-//let alphabets = ["a" , "b" , "c" , "d" , "e" , "f" , "g" , "h" , "i" , "j" , "k" , "l" , "m" , "n" , "o" , "p" , "q" , "r" , "s" , "t" , "u" , "v" , "w" , "x" , "y" , "z"]
+<body>
+  <h1>PASSWORDS</h1>
+  <div class="allCards">
+  <div class="cards">
+    <h1>Number Password</h1>
+  <button style="margin-top: 0.8%;" onclick="numberPassword()">JUST NUMBER</button>
+  <p id="number"></p>
+</div>
+<div class="cards">
+  <h1>Random Password</h1>
+  <button style="margin-top: 0.8%;" onclick="randomPassword()">Random Password</button>
+</div>
+<div class="cards">
+  <h1>Alphabets Password</h1>
+  <button style="margin-top: 0.8%;" onclick="numberPassword()">JUST NUMBER</button>
+</div>
+</div>
+  <script>
 
-// function alphabetsPassword(){
-//   let alphaberInp = prompt("How many length of password you want? \n Enter a number \n Only 15 number length is available")
-//   let alphabets = "abcdefghijklmnopqrstuvwxyz"
-//   let alphaPow = Math.pow(alphaberInp)
-  
-//   let alphaRandom = Math.random() * alphaPow * alphabets.length
-//   let alphaFloor = Math.floor(alphaRandom)  
-//   document.write(`<b>Your Password is</b>:<i> ${alphaFloor}</i>`);
-// }
-    </script>
+    // let random = Math.random() * 10000000
+    // let floor = Math.floor(random)
+    // console.log(floor);
+
+    // function numberPassword() {
+    //   let numberInp = prompt("How many length of password you want? \n Enter a number \n Only 15 number length is available")
+    //   if (numberInp == '2') {
+    //     let random = Math.random() * 100 + 1
+    //     let floor = Math.floor(random)
+    //     document.write(`Your Password is: ${floor}`);
+    // } else if (numberInp == '3') {
+    //     let random = Math.random() * 1000 + 1
+    //     let floor = Math.floor(random)
+    //     document.write(`Your Password is: ${floor}`);
+    // } else if (numberInp == '4') {
+    //     let random = Math.random() * 10000 + 1
+    //     let floor = Math.floor(random)
+    //     document.write(`Your Password is: ${floor}`);
+    // } else if (numberInp == '5') {
+    //     let random = Math.random() * 100000 + 1
+    //     let floor = Math.floor(random)
+    //     document.write(`Your Password is: ${floor}`);
+    // } else if (numberInp == '6') {
+    //     let random = Math.random() * 1000000 + 1
+    //     let floor = Math.floor(random)
+    //     document.write(`Your Password is: ${floor}`);
+    // } else if (numberInp == '7') {
+    //     let random = Math.random() * 10000000 + 1
+    //     let floor = Math.floor(random)
+    //     document.write(`Your Password is: ${floor}`);
+    // } else if (numberInp == '8') {
+    //     let random = Math.random() * 100000000 + 1
+    //     let floor = Math.floor(random)
+    //     document.write(`Your Password is: ${floor}`);
+    // } else if (numberInp == '9') {
+    //     let random = Math.random() * 1000000000 + 1
+    //     let floor = Math.floor(random)
+    //     document.write(`Your Password is: ${floor}`);
+    // } else if (numberInp == '10') {
+    //     let random = Math.random() * 10000000000 + 1
+    //     let floor = Math.floor(random)
+    //     document.write(`Your Password is: ${floor}`);
+    // } else if (numberInp == '11') {
+    //     let random = Math.random() * 100000000000 + 1
+    //     let floor = Math.floor(random)
+    //     document.write(`Your Password is: ${floor}`);
+    // } else if (numberInp == '12') {
+    //     let random = Math.random() * 1000000000000 + 1
+    //     let floor = Math.floor(random)
+    //     document.write(`Your Password is: ${floor}`);
+    // } else if (numberInp == '13') {
+    //     let random = Math.random() * 10000000000000 + 1
+    //     let floor = Math.floor(random)
+    //     document.write(`Your Password is: ${floor}`);
+    // } else if (numberInp == '14') {
+    //     let random = Math.random() * 100000000000000 + 1
+    //     let floor = Math.floor(random)
+    //     document.write(`Your Password is: ${floor}`);
+    // } else if (numberInp == '15') {
+    //     let random = Math.random() * 1000000000000000 + 1
+    //     let floor = Math.floor(random)
+    //     document.write(`Your Password is: ${floor}`);
+    // } else {
+    //     alert("This is password length is not available")
+    // }
+    // }
+
+
+    function numberPassword() {
+      let numberInp = prompt("How many length of password you want? \n Enter a number \n Only 15 number length is available")
+
+      if (numberInp >= 2 && numberInp <= 15) {
+        let pow = Math.pow(10, numberInp)
+        let random = Math.random() * pow + 1
+        let floor = Math.ceil(random)
+        document.getElementById("number").innerHTML = floor
+      } else {
+        alert("This is password length is not available")
+      }
+    }
+   
+    // let randomPass = ["abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@%&"]
+    //   let password = "";
+
+    // function randomPassword() {
+      
+    //   let randomInp = prompt("How many length of password you want? \n Enter a number \n Only 15 number length is available")
+    //   return;
+    //  }
+    //  for (var i = 0; i < randomInp.length; i++) {
+    //     if(randomInp[i] == randomPass){
+    //       password += Math.floor()
+    //     }
+    //   }
+  </script>
 </body>
+
 </html>

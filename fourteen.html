@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date and Time</title>
+  <style>
+    .allCards {
+      justify-content: space-evenly;
+      align-items: center;
+      display: flex;
+      height: 80vh;
+      width: 100%;
+    }
+
+    .cards {
+      position: relative;
+      font-style: italic;
+      font-family: "Aref Ruqaa Ink", serif;
+      color: black;
+      width: 20vw;
+      height: 50vh;
+      border-radius: 10px;
+      border: 1px solid black;
+      box-shadow: 12px 12px 13px rgba(0, 0, 0, 0.3);
+    }
+
+    button {
+      background: black;
+      position: absolute;
+      top: 45%;
+      left: 22%;
+      width: 150px;
+      height: 30px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+
+    .para {
+      text-align: center;
+      margin-top: 40%;
+      font-weight: bolder;
+      font-size: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+    .watch{
+      margin-left: 43%;
+      border: 3px solid gray;
+      border-radius: 10px;
+      width: 170px;
+      height: 70px;
+    }
+    .watch{
+      background-color: black;
+      color: red;
+      text-align: center;
+      align-content: center;
+      font-size: 22px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="watch">
+    <p id="time"></p>
+  </div>
+  <h1>CHECK YOUR DATE OF BIRTH AND 'AGE'</h1>
+  <div class="allCards">
+    <div class="cards">
+      <h1>CHECK YOUR AGE</h1>
+      <button onclick="dateOfBirth()">Check Age</button>
+      <p class="para" id="age"></p>
+    </div>
+  </div>
+
+
+
+  <script>
+    let time = new Date()
+    let hours = time.getHours() % 12 || 12 
+    let minutes = time.getMinutes()
+    let seconds = time.getSeconds()
+    let ampm = time.getHours() >= 12 ? "PM" : "AM"
+    document.getElementById('time').innerHTML = `${hours}:${minutes}:${seconds} ${ampm}`
+
+    function dateOfBirth() {
+      let userBirth = prompt("Enter Your Date Of Birth \n Month/Day/Year")
+      let userDateAndTime = new Date(userBirth)
+
+      let month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      let userMonth = userDateAndTime.getMonth()
+      let typeOfMonth = month[userMonth]
+
+      let userDate = userDateAndTime.getDate()
+      let dateString = userDate.toString()
+
+      let userYear = userDateAndTime.getFullYear()
+      let yearString = userYear.toString()
+
+      let daysArray = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+      let userDay = userDateAndTime.getDay();
+      let typeOfDay = daysArray[userDay]
+
+      let newDate = new Date()
+      let newYear = newDate.getFullYear()
+
+
+      document.getElementById('age').innerHTML = `<b>Day:</b> ${typeOfDay}<br> DOB: ${typeOfMonth}/${dateString}/${yearString} <br> Your Age Is: ${newYear - userYear}`
+
+
+
+    }
+
+
+  </script>
+</body>
+
+</html>

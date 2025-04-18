@@ -5,7 +5,7 @@
 }
 
 body {
-    background: wheat ;
+    background: wheat;
 }
 
 h1 {
@@ -25,7 +25,7 @@ h1 {
     justify-content: space-evenly;
 }
 
-.card{
+.card {
     background: #DEB887;
     font-style: italic;
     font-family: "Aref Ruqaa Ink", serif;
@@ -41,20 +41,25 @@ h1 {
     justify-content: space-evenly;
     box-shadow: 12px 12px 13px rgba(0, 0, 0, 0.3);
 }
-.card>h2{
+
+.card>h2 {
     font-size: 2em;
 }
-.card>h3{
+
+.card>h3 {
     font-size: 1.8em;
 }
-.card>.question{
+
+.card>.question {
     text-align: center;
     font-size: 17px;
 }
-.card>.question>p{
+
+.card>.question>p {
     font-weight: bold;
 }
-.card>a>button{
+
+.card>a>button {
     background: black;
     padding: 10px;
     border: none;
@@ -63,243 +68,296 @@ h1 {
     color: white;
     text-decoration: none;
 }
-.card:hover{
+
+.card:hover {
     cursor: pointer;
     background: #bb9666;
     transition: all 0.3s ease;
 }
-.card>a>button:hover{
+
+.card>a>button:hover {
     cursor: pointer;
     background: rgb(20, 20, 20);
     transition: all 0.2s ease-in;
 }
+
 @media (min-width: 344px) and (max-width: 667px) {
-    h1{
+    h1 {
         font-size: 25px;
     }
-    .container{
+
+    .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .card{
+
+    .card {
         margin-top: 50px;
         width: 250px;
         height: 300px;
     }
-    .card>h2{
+
+    .card>h2 {
         font-size: 25px;
     }
-    .card>h3{
+
+    .card>h3 {
         font-size: 25px;
     }
-   
+
 }
-@media (min-width: 667px) and (max-width: 1023px){
-    h1{
+
+@media (min-width: 667px) and (max-width: 1023px) {
+    h1 {
         font-size: 50px;
     }
-    .container{
+
+    .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .card{
+
+    .card {
         margin-top: 50px;
         width: 450px;
         height: 500px;
         border-radius: 12px;
     }
-    .card>h2{
+
+    .card>h2 {
         font-size: 50px;
     }
-    .card>h3{
+
+    .card>h3 {
         font-size: 48px;
     }
-    .card>a>button{
+
+    .card>a>button {
         width: 300px;
         height: 50px;
         font-size: 20px;
     }
-    .question>p{
+
+    .question>p {
         font-size: 28px;
     }
 }
-@media (min-width: 1024px) and (max-width: 1110px){
 
-    .container{
+@media (min-width: 1024px) and (max-width: 1110px) {
+
+    .container {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        
+
     }
-    h1{
+
+    h1 {
         font-size: 70px;
     }
-    .card>h2{
+
+    .card>h2 {
         font-size: 20px;
     }
-    .card>h3{
+
+    .card>h3 {
         font-size: 20px;
     }
-    .card{
+
+    .card {
         border-radius: 12px;
         margin-top: 50px;
         width: 200px;
         height: 250px;
     }
-    .question>p{
+
+    .question>p {
         font-size: 12px;
     }
-    .card>a>button{
+
+    .card>a>button {
         width: 170px;
         height: 30px;
         font-size: 10px;
     }
 }
-@media (min-width: 1110px) and (max-width: 1200px){
-    h1{
+
+@media (min-width: 1110px) and (max-width: 1200px) {
+    h1 {
         font-size: 70px;
     }
-    .card>h2{
+
+    .card>h2 {
         font-size: 20px;
     }
-    .card>h3{
+
+    .card>h3 {
         font-size: 20px;
     }
-    .card{
+
+    .card {
         border-radius: 10px;
         margin-top: 50px;
         width: 200px;
         height: 230px;
     }
-    .question>p{
+
+    .question>p {
         font-size: 12px;
     }
-    .card>a>button{
+
+    .card>a>button {
         width: 150px;
         height: 30px;
         font-size: 10px;
     }
 }
-@media (min-width: 1200px) and (max-width: 1326px){
-    h1{
+
+@media (min-width: 1200px) and (max-width: 1326px) {
+    h1 {
         font-size: 70px;
     }
-    .card>h2{
+
+    .card>h2 {
         font-size: 28px;
     }
-    .card>h3{
+
+    .card>h3 {
         font-size: 27px;
     }
-    .card{
+
+    .card {
         border-radius: 12px;
         margin-top: 50px;
         width: 250px;
         height: 280px;
     }
-    .question>p{
+
+    .question>p {
         font-size: 15px;
     }
 }
-@media (min-width: 1326px) and (max-width: 1670px){
-    .card{
+
+@media (min-width: 1326px) and (max-width: 1670px) {
+    .card {
         border-radius: 12px;
         margin-top: 50px;
         width: 280px;
         height: 300px;
     }
 }
-@media (min-width: 1670px) and (max-width: 1800px){
-    h1{
+
+@media (min-width: 1670px) and (max-width: 1800px) {
+    h1 {
         font-size: 70px;
     }
-    .card>h2{
+
+    .card>h2 {
         font-size: 28px;
     }
-    .card>h3{
+
+    .card>h3 {
         font-size: 27px;
     }
-    .card{
+
+    .card {
         border-radius: 10px;
         margin-top: 50px;
         width: 250px;
         height: 280px;
     }
-    .question>p{
+
+    .question>p {
         font-size: 15px;
     }
 }
-@media (min-width: 1326px) and (max-width: 1670px){
-    .card{
+
+@media (min-width: 1326px) and (max-width: 1670px) {
+    .card {
         border-radius: 10px;
         margin-top: 50px;
         width: 280px;
         height: 300px;
     }
 }
-@media (min-width: 1670px) and (max-width: 2000px){
-    .container{
+
+@media (min-width: 1670px) and (max-width: 2000px) {
+    .container {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        
+
     }
-    h1{
+
+    h1 {
         font-size: 110px;
     }
-    .card>h2{
+
+    .card>h2 {
         font-size: 30px;
     }
-    .card>h3{
+
+    .card>h3 {
         font-size: 30px;
     }
-    .card{
+
+    .card {
         border-radius: 12px;
         margin-top: 50px;
         width: 300px;
         height: 330px;
     }
-    .question>p{
+
+    .question>p {
         font-size: 20px;
     }
-    .card>a>button{
+
+    .card>a>button {
         width: 210px;
         height: 40px;
         font-size: 15px;
     }
 }
-@media (min-width: 2000px) and (max-width: 2882px){
-    .container{
+
+@media (min-width: 2000px) and (max-width: 2882px) {
+    .container {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        
+
     }
-    h1{
+
+    h1 {
         font-size: 140px;
     }
-    .card>h2{
+
+    .card>h2 {
         font-size: 50px;
     }
-    .card>h3{
+
+    .card>h3 {
         font-size: 48px;
     }
-    .card{
+
+    .card {
         border-radius: 15px;
         margin-top: 50px;
         width: 450px;
         height: 500px;
     }
-    .question>p{
+
+    .question>p {
         font-size: 30px;
     }
-    .card>a>button{
+
+    .card>a>button {
         border-radius: 35;
         width: 300px;
         height: 60px;

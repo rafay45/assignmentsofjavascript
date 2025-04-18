@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment fifteen</title>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">STRING METHODS</h1>
+
+    <h2>QUESTION ONE</h2>
+    <p><span style="font-weight: bolder;">First Name:&nbsp;</span><span id="first"></span></p>
+    <p><span style="font-weight: bolder;">Last Name:&nbsp;</span><span id="last"></span></p>
+    <p><span style="font-weight: bolder;">Full Name:&nbsp;</span><span id="full"></span></p>
+
+    <h2>QUESTION TWO</h2>
+    <p id="choice"></p>
+    <p id="length"></p>
+
+    <h2>QUESTION THREE</h2>
+    <h4>Pakistani</h4>
+    <p id="index"></p>
+    <p id="check"></p>
+    <button onclick="indexCheck()">Check Index</button>
+
+    <h2>Question Seven</h2>
+    <h4>Hyderabad</h4>
+    <p id="replace" ></p>
+    <script>
+        let firstName = prompt("Enter your First Name")
+        console.log(firstName);
+
+        let lastName = prompt("Enter your Last Name")
+        console.log(lastName);
+
+        let fullName = firstName + " " + lastName
+        let concatName = firstName.concat(" " + lastName)
+        document.getElementById('first').innerHTML = firstName
+        document.getElementById('last').innerHTML = lastName
+        document.getElementById('full').innerHTML = concatName
+
+        let userChoice = prompt("Enter your Fav mobile Name")
+         document.getElementById("choice").innerHTML = "<b>Your Favorite Phone is</b>:" + " " + userChoice
+         document.getElementById('length').innerHTML = "<b>Your Phone name length is</b>:" + " " + userChoice.length
+
+        let checked = "";
+        function indexCheck() {
+            let check = prompt("Enter Character Then check indexNumber..")
+            let array = ["p", "a", "k", "i", "s", "t", "a", "n", "i"]
+            checked = + array.indexOf(check)
+            document.getElementById("index").innerHTML = `Your Character is '${check}' and index is ${checked}`
+            document.getElementById("check").innerHTML = `Character at index '${checked}': ${check}`
+        }
+        let city = "Hyderabad"
+        let replace = city.replace("Hyder" , "Islam")
+         document.getElementById('replace').innerHTML = `<b>After Replace:</b> ${replace}`
+    </script>
+</body>
+
+</html>

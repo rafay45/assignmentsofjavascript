@@ -50,14 +50,16 @@
     h1 {
       text-align: center;
     }
-    .watch{
+
+    .watch {
       margin-left: 43%;
       border: 3px solid gray;
       border-radius: 10px;
       width: 170px;
       height: 70px;
     }
-    .watch{
+
+    .watch {
       background-color: black;
       color: red;
       text-align: center;
@@ -84,7 +86,7 @@
 
   <script>
     let time = new Date()
-    let hours = time.getHours() % 12 || 12 
+    let hours = time.getHours() % 12 || 12
     let minutes = time.getMinutes()
     let seconds = time.getSeconds()
     let ampm = time.getHours() >= 12 ? "PM" : "AM"

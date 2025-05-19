@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+    <title>Assignment Twelve</title>
+</head>
+<body>
+    <script>
+        let keys = []
+        let hidden = "rafay" 
+  window.addEventListener('keyup', (e) => {
+      console.log(e.key);
+      keys.push(e.key)
+      console.log(keys);
+      
+     keys.splice(-hidden.length - 1, keys.length - hidden.length)
+      console.log(keys);
+      if(keys.join('').includes(hidden)){
+        console.log("Found");
+        console.log(keys);
+        
+        cornify_add();
+      }
+  })
+  
+    </script>
+</body>
+</html>
